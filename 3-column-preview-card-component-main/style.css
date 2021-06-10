@@ -1,0 +1,101 @@
+/* Repent and turn to Christ to be saved! Romans 10:9-10, Ephesians 2:8-10, Mark 16:16*/
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+:root{
+    /* -- Primary --*/
+    --bright-orange: hsl(31, 77%, 52%);
+    --Dark-Cyan: hsl(184, 100%, 22%);
+    --Very-Dark-Cyan: hsl(179, 100%, 13%);
+
+    /* -- Neutral -- */
+    --Transparent-White: hsla(0, 0%, 100%, 0.75);
+    --Very-Light-Gray: hsl(0, 0%, 95%);
+}
+p, 
+h1,  
+.button{
+ margin-top: 35px;
+}
+img{
+    margin-top: 20px;
+}
+#flex-container{
+    display: flex;
+    flex-direction: column;
+}
+.flex-item{
+    color: white;
+    padding: 20px;
+}
+.content{
+    width: 75%;
+    margin-inline: auto;
+    line-height: 1.5em;
+    font-family: 'Lexend Deca', sans-serif;
+    padding-bottom: 30px;
+}
+#item-a{
+    background: var(--bright-orange);
+    border-radius: 10px 10px 0px 0px;
+}
+#item-b{
+    background: var(--Dark-Cyan);
+}
+#item-c{
+    background: var(--Very-Dark-Cyan);
+    border-radius: 0px 0px 10px 10px;
+}
+h1{
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', sans-serif;
+}
+p{
+    color: var(--Transparent-White);
+}
+.button{
+    background: white;
+    text-align: center;
+    border-radius: 2em;
+    padding: 10px;
+    width: 50%;
+    font-size: 0.85em;
+}
+#button-a{
+    color: var(--bright-orange);
+}
+#button-b{
+    color: var(--Dark-Cyan);
+}
+#button-c{
+    color: var(--Very-Dark-Cyan);
+}
+
+/* Media functions */
+@media screen and (min-width: 900px){
+    #flex-container{
+        flex-direction: row;
+        width: 75em;
+        height: 35em;
+        margin-inline: auto;
+        margin-top: 11%;
+    }
+
+    #item-a{
+        border-radius: 10px 0px 0px 10px;
+    }
+    #item-c{
+        border-radius: 0px 10px 10px 0px;
+    }
+p, 
+h1,  
+.button{
+ margin-top: 80px;
+}
+h1{
+    font-size: 3em;
+}
+p{
+    font-size: 1.1em;
+}
+}
